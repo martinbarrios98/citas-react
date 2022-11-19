@@ -1,0 +1,19 @@
+.alerta{
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    p{
+        color: $blanco;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    &.error{
+        background-color: $rojoBarra;
+    }
+    &.exito{
+        background-color: $verde;
+    }
+}

@@ -1,0 +1,70 @@
+.listado-pacientes{
+    margin: $separacion/2 0;
+    h2{
+        font-weight: $boldx1;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-weight: $regularx3;
+        span{
+            color: $morado;
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        ul{
+            list-style: none;
+            margin: 1rem 0 0 0;
+            padding: 1rem;
+            background-color: $blanco;
+            border-radius: 1rem;
+            @include desktop{
+                flex-basis: calc(50% - 1rem);
+            }
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    text-align: left;
+                    font-weight: $regularx3;
+                    span{
+                        font-weight: $regularx1;
+                        color: $negro;
+                    }
+                    @include desktop{
+                        font-size: 1.3rem;
+                    }
+                }
+                button{
+                    color: $blanco;
+                    padding: 1rem;
+                    text-align: center;
+                    font-weight: $boldx1;
+                    border-radius: 1rem;
+                    flex-basis: calc(50% - 1rem);
+                    border: none;
+                    @include desktop{
+                        font-size: 1.3rem;
+                    }
+                    &:first-of-type{
+                        background-color: $rojoBarra;
+                    }
+                    &:last-of-type{
+                        background-color: $morado;
+                    }
+                }
+            }
+        }
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    @include tablet{
+        flex-basis: calc(50% - 1rem);
+    }
+}

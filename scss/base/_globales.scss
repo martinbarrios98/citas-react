@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fuentePrincipal;
+    font-size: 1.6rem;
+    margin: 0;
+    background-color: $gris;
+    min-height: 100vh;
+    &.fijo {
+        overflow: hidden;
+    }
+}
+
+p {
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+h1, h2, h3 {
+    margin: 2rem 0;
+    font-family: $fuentePrincipal;
+    font-weight: $boldx1;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

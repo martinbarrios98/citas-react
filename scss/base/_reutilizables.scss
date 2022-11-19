@@ -1,0 +1,76 @@
+.bg-verde {
+    background-color: $verde;
+}
+.bg-amarillo {
+    background-color: $amarilloBarra;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.izquierda{
+    text-align: left;
+}
+
+.derecha{
+    text-align: right;
+}
+
+.sombra{
+    box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+}
+
+.cristalino{
+    border-radius: 1rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1rem;
+}
+
+.z-index-3{
+    z-index: 3;
+}
+
+.z-index-1{
+    z-index: 1;
+}
+
+.seccion{
+    margin: 8rem 0;
+}
+
+.contenedor-imagen{
+    text-align: center;
+}
+
+.sombra-izquierda{
+    box-shadow: -6px -2px 5px 0px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -6px -2px 5px 0px rgba(0,0,0,0.23);
+    -moz-box-shadow: -6px -2px 5px 0px rgba(0,0,0,0.23);
+}
+
+.sombra-abajo{
+    box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.23);
+    -moz-box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.23);
+}
+
+.tagline{
+    margin: 1rem 0;
+    font-weight: $delgadax2;
+}
+
+.contenedor-botones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    a{
+        text-align: center;
+    }
+}

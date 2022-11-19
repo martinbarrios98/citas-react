@@ -1,0 +1,73 @@
+.formulario{
+    h2{
+        font-weight: $boldx1;
+        text-align: center;
+    }
+    p{
+        font-weight: $regularx3;
+        text-align: center;
+        span{
+            color: $morado;
+        }
+    }
+    form{
+        margin: $separacion/2 0;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        background-color: $blanco;
+        .campo{
+            display: flex;
+            flex-direction: column;
+            label{
+                font-weight: $boldx1;
+            }
+            input{
+                width: 100%;
+                border-radius: 1rem;
+                border: 1px solid $gris;
+                padding: 1rem;
+                margin: 1rem 0;
+                &::placeholder{
+                    color: $gris;
+                }
+            }
+            textarea{
+                width: 100%;
+                display: block;
+                border-radius: 1rem;
+                border: 1px solid $gris;
+                margin: 1rem 0;
+                padding: 1rem;
+                min-height: 10rem;
+                &::placeholder{
+                    color: $gris;
+                }
+            }
+        }
+        button{
+            background-color: $rojoBarra;
+            color: $blanco;
+            border: none;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        input[type="submit"]{
+            background-color: $morado;
+            color: $blanco;
+            border: none;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    @include tablet{
+        flex-basis: calc(50% - 1rem);
+    }
+}

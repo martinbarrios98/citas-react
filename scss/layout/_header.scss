@@ -1,0 +1,13 @@
+.header-principal{
+    padding: 2rem;
+    h1{
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+            width: 100%;
+            display: block;
+            color: $morado;
+        }
+    }
+}
